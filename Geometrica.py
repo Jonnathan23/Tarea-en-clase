@@ -15,7 +15,7 @@ xValores = list(range(1, x + 1))
 probabilidades = [p * (1 - p) ** (i - 1) for i in xValores]
 
 # Gráfico de barras
-plt.bar(xValores, probabilidades, label=f'Probabilidad: {px*100:.2f}%')
+plt.bar(xValores, probabilidades, label=f'Probabilidad: {px*100:.3f}%')
 plt.xlabel('Número de intento')
 plt.ylabel('Probabilidad')
 plt.title('Distribución de probabilidad binomial')
